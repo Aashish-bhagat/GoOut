@@ -1,8 +1,7 @@
 package com.fortefort.goout;
 
-import android.graphics.Matrix;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -17,21 +16,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     long startTime;
-    long LONG_PRESS_THRESHOLD = 1000;
+    long LONG_PRESS_THRESHOLD = 500;
     boolean isPressed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageButton button = (ImageButton) findViewById(R.id.calltoaction);
 
-        ImageView iv = (ImageView) findViewById(R.id.imageView);
-        final Matrix origMatrix = iv.getImageMatrix();
-        final Matrix rotatedMatrix = iv.getImageMatrix();
-        System.out.println(rotatedMatrix);
-        rotatedMatrix.postRotate(180.0f, iv.getDrawable().getBounds().width()/2, iv.getDrawable().getBounds().height()/2);
-        System.out.println(rotatedMatrix);
+        ImageButton button = (ImageButton) findViewById(R.id.calltoaction);
 
         final RotateAnimation spinn = new RotateAnimation(0,180, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
         spinn.setDuration(LONG_PRESS_THRESHOLD);
@@ -66,23 +59,17 @@ public class MainActivity extends AppCompatActivity {
 
                     iv.clearAnimation();
                     iv.setRotation(0); isPressed = false;
-
                     btn.setImageResource(R.mipmap.buttonpassive);
+
                     if(System.currentTimeMillis()-startTime>LONG_PRESS_THRESHOLD){
-                        Toast.makeText(getBaseContext(), "LongPress", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getBaseContext(), "LongPress", Toast.LENGTH_SHORT).show();
                     }
 
                 }
-
+                else return false;
                 return true;
             }
         });
 
     }
-
-    public void onRelease(View v){
-        ImageButton btn;
-
-    }
-
 }
