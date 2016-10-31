@@ -21,13 +21,14 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="336dp">
+        android:layout_height="336dp"
+        android:id="@+id/framef">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/buttonpassive"
-            android:id="@+id/calltoaction"
+            android:id="@+id/calltoactionf"
             android:adjustViewBounds="false"
             android:scaleType="fitXY"
             android:contentDescription="@string/call_to_act"
