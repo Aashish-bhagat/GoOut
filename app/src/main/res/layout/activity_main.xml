@@ -30,7 +30,8 @@
                 android:id="@+id/calltoaction"
                 android:adjustViewBounds="false"
                 android:scaleType="fitXY"
-                android:contentDescription="@string/call_to_act" />
+                android:contentDescription="@string/call_to_act"
+                android:background="@color/backgroundGrey"/>
 
             <ImageView
                 android:layout_width="wrap_content"
