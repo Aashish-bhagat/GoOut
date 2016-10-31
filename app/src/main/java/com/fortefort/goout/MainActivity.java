@@ -1,5 +1,6 @@
 package com.fortefort.goout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     long startTime;
-    long LONG_PRESS_THRESHOLD = 500;
+    long LONG_PRESS_THRESHOLD = 450;
     boolean isPressed = false;
 
     @Override
@@ -62,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
                     btn.setImageResource(R.mipmap.buttonpassive);
 
                     if(System.currentTimeMillis()-startTime>LONG_PRESS_THRESHOLD){
-                        Toast.makeText(getBaseContext(), "LongPress", Toast.LENGTH_SHORT).show();
+                        Intent startFilterIntent = new Intent(getBaseContext(), FilterActivity.class);
+                        startActivity(startFilterIntent);
                     }
 
                 }
