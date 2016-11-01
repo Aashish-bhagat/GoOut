@@ -14,6 +14,8 @@ import java.util.Map;
 import com.inmobi.ads.*;
 import com.inmobi.sdk.*;
 
+import org.json.JSONObject;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         InMobiSdk.init(this, "f8a1a41a520343c39962e79b25ee4072"); //'this' is used specify context
+        ServerHandle.init(this);
 
         ImageButton button = (ImageButton) findViewById(R.id.calltoaction);
 
@@ -68,6 +71,15 @@ public class MainActivity extends AppCompatActivity {
                     if(System.currentTimeMillis()-startTime>LONG_PRESS_THRESHOLD){
                         Intent startFilterIntent = new Intent(getBaseContext(), FilterActivity.class);
                         startActivity(startFilterIntent);
+                    }
+                    else{
+                        JSONObject json = new JSONObject();
+                        try {
+                            json.put("cash: ", "kuldeep");
+                            json.put("LOL","meh");
+                            }catch(Exception e){e.printStackTrace();}
+                        ServerHandle h = new ServerHandle();
+                        h.execute(json);
                     }
 
                 }

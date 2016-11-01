@@ -21,23 +21,6 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/filters">
-
-        <ImageView
-            android:layout_width="339dp"
-            android:layout_height="496dp"
-            app:srcCompat="@mipmap/shadow"
-            android:id="@+id/imageView2"
-            tools:layout_width="match_parent"
-            android:visibility="visible"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="false"
-            android:layout_alignParentBottom="true" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
         android:layout_height="336dp"
         android:id="@+id/framef"
         android:visibility="visible">
@@ -60,6 +43,24 @@
             android:scaleType="fitXY"
             android:contentDescription="@string/going_out" />
 
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/filters">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/shadow"
+            android:id="@+id/shadowView"
+            tools:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="false"
+            android:adjustViewBounds="false" />
     </FrameLayout>
 
 </RelativeLayout>

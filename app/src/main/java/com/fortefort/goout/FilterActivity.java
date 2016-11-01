@@ -8,6 +8,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import com.google.android.gms.vision.Frame;
+
 public class FilterActivity extends AppCompatActivity {
 
     @Override
@@ -15,7 +17,6 @@ public class FilterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filter);
         final FrameLayout frame = (FrameLayout) findViewById(R.id.framef);
-        //final ImageButton iv = (ImageButton) findViewById(R.id.calltoactionf);
         final ValueAnimator animator = ValueAnimator.ofInt(0,100);
 
         frame.post(new Runnable() {
@@ -40,6 +41,16 @@ public class FilterActivity extends AppCompatActivity {
                 });
                 animator.setDuration(400);
                 animator.start();
+            }
+        });
+
+        final FrameLayout dd = (FrameLayout) findViewById(R.id.filters);
+        dd.post(new Runnable() {
+            @Override
+            public void run() {
+              ImageView iv = (ImageView) findViewById(R.id.shadowView);
+                iv.setScaleY(1.35f*dd.getHeight()/iv.getHeight());
+                iv.setTranslationY(dd.getHeight()*0.053f);
             }
         });
     }
