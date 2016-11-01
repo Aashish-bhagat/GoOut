@@ -10,8 +10,9 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
-
+import java.util.Map;
+import com.inmobi.ads.*;
+import com.inmobi.sdk.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        InMobiSdk.init(this, "f8a1a41a520343c39962e79b25ee4072"); //'this' is used specify context
 
         ImageButton button = (ImageButton) findViewById(R.id.calltoaction);
 
@@ -73,5 +76,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        InMobiBanner banner = (InMobiBanner)findViewById(R.id.banner);
+        banner.load();
+        //System.out.println("YAYR");
     }
 }

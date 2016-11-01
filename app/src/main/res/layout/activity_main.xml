@@ -4,8 +4,9 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.inmobi.ads"
         android:id="@+id/activity_main"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
@@ -19,7 +20,7 @@
         android:background="@color/backgroundGrey"
         >
 
-        <FrameLayout
+    <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="336dp">
 
@@ -41,4 +42,18 @@
                 android:scaleType="fitXY"
                 android:contentDescription="@string/going_out" />
         </FrameLayout>
-    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:foregroundGravity="bottom|center"
+        android:layout_gravity="bottom">
+
+        <com.inmobi.ads.InMobiBanner
+            android:id="@+id/banner"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            ads:placementId="1479202276572"
+            android:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>
