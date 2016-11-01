@@ -24,6 +24,16 @@
         android:layout_height="match_parent"
         android:id="@+id/filters">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="297dp"
+            app:srcCompat="@mipmap/shadow"
+            android:id="@+id/imageView2"
+            tools:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="true" />
     </FrameLayout>
 
     <FrameLayout
@@ -49,17 +59,6 @@
             android:id="@+id/imageViewf"
             android:scaleType="fitXY"
             android:contentDescription="@string/going_out" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="297dp"
-            app:srcCompat="@mipmap/shadow"
-            android:id="@+id/imageView2"
-            tools:layout_width="match_parent"
-            android:visibility="visible"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="false"
-            android:layout_alignParentBottom="true" />
 
     </FrameLayout>
 
