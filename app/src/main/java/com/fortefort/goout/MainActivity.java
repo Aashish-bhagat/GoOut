@@ -10,7 +10,6 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import java.util.Map;
 import com.inmobi.ads.*;
 import com.inmobi.sdk.*;
 

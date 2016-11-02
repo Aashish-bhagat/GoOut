@@ -19,14 +19,14 @@ import java.util.ArrayList;
 
 /**
  * Created by Vaishnav on 11/1/2016.
- * Meant to
+ * Meant to interact with the server
  */
 
-public class ServerHandle extends AsyncTask<JSONObject, String, ArrayList<String> >{
+class ServerHandle extends AsyncTask<JSONObject, String, ArrayList<String> >{
 
-    static URL url;
+    private static URL url;
 
-    public static void init(Context c){
+    static void init(Context c){
         try{
             url = new URL("http://www.fortefort.com/goout.php");
         }catch(MalformedURLException e){

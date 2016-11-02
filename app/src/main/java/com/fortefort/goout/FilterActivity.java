@@ -1,14 +1,10 @@
 package com.fortefort.goout;
 
 import android.animation.ValueAnimator;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-
-import com.google.android.gms.vision.Frame;
 
 public class FilterActivity extends AppCompatActivity {
 
