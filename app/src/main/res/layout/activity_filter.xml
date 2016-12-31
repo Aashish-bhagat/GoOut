@@ -48,7 +48,10 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/filters">
+        android:id="@+id/filters"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ImageView
             android:layout_width="match_parent"
@@ -61,6 +64,82 @@
             android:layout_alignParentStart="false"
             android:layout_alignParentBottom="false"
             android:adjustViewBounds="false" />
+
+        <Spinner
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="320dp" />
+
+        <Spinner
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:clipToPadding="false"
+            android:layout_marginTop="270dp"
+            android:layout_marginStart="35dp" />
+
+        <SeekBar
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar2"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="220dp"
+            android:background="@color/DarkGrey"
+             />
+
+        <TextView
+            android:text="Distance"
+            android:layout_width="107dp"
+            android:layout_height="36dp"
+            android:id="@+id/textView"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="152dp"
+            android:textColor="@color/Pinkish"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="205dp"
+            android:textColor="@color/Pinkish"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:text="Cuisine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="250dp"
+            android:textColor="@color/Pinkish"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:text="Music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="300dp"
+            android:textColor="@color/Pinkish"
+            android:textStyle="normal|bold"/>
+
+        <SeekBar
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar1"
+            android:layout_marginTop="170dp"
+            android:background="@color/DarkGrey"
+            android:layout_marginStart="35dp"
+            android:foregroundTint="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
+
+
     </FrameLayout>
 
 </RelativeLayout>
