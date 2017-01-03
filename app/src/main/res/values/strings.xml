@@ -2,4 +2,21 @@
     <string name="app_name">Go Out</string>
     <string name="call_to_act">Call To Action</string>
     <string name="going_out">Going Out</string>
+    <string-array name="Cuisines">
+        <item>"North Indian"</item>
+        <item>"Continental"</item>
+        <item>"Chinese"</item>
+        <item>"Tibetean"</item>
+        <item>"Japanese"</item>
+        <item>"South Indian"</item>
+        <item>"Korean"</item>
+        <item>"Others"</item>
+
+    </string-array>
+    <string-array name="Music">
+        <item>"Live Performance"</item>
+        <item>"Music System"</item>
+        <item>"Play your own music"</item>
+
+    </string-array>
 </resources>

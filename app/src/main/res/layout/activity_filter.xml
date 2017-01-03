@@ -71,7 +71,9 @@
             android:id="@+id/spinner2"
             android:layout_marginStart="35dp"
             android:layout_marginEnd="45dp"
-            android:layout_marginTop="320dp" />
+            android:layout_marginTop="320dp"
+            android:entries="Music"
+            />
 
         <Spinner
             android:layout_width="268dp"
@@ -79,7 +81,8 @@
             android:id="@+id/spinner1"
             android:clipToPadding="false"
             android:layout_marginTop="270dp"
-            android:layout_marginStart="35dp" />
+            android:layout_marginStart="35dp"
+            android:entries="Cuisines"/>
 
         <SeekBar
             android:layout_width="252dp"
@@ -88,7 +91,7 @@
             android:layout_marginStart="35dp"
             android:layout_marginTop="220dp"
             android:background="@color/DarkGrey"
-             />
+            />
 
         <TextView
             android:text="Distance"
@@ -138,6 +141,14 @@
             android:background="@color/DarkGrey"
             android:layout_marginStart="35dp"
             android:foregroundTint="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
+
+        <RadioButton
+            android:text="Vegeterian only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:layout_marginTop="360dp"
+            android:layout_marginStart="35dp" />
 
 
     </FrameLayout>
