@@ -72,7 +72,8 @@
             android:layout_marginStart="35dp"
             android:layout_marginEnd="45dp"
             android:layout_marginTop="320dp"
-            android:entries="Music"
+            android:entries="@array/Music"
+            android:prompt="@string/Music1"
             />
 
         <Spinner
@@ -82,7 +83,10 @@
             android:clipToPadding="false"
             android:layout_marginTop="270dp"
             android:layout_marginStart="35dp"
-            android:entries="Cuisines"/>
+            android:entries="@array/Cuisines"
+            android:prompt="@string/Cuisines1"
+
+            />
 
         <SeekBar
             android:layout_width="252dp"

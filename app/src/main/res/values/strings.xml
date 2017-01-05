@@ -19,4 +19,6 @@
         <item>"Play your own music"</item>
 
     </string-array>
+    <string name="Cuisines1">Cuisines</string>
+    <string name="Music1">Music</string>
 </resources>
